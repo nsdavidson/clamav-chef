@@ -23,7 +23,7 @@ default['clamav']['clamd']['enabled'] = false
 
 # OS-Specific Options
 case node['platform_family']
-when 'rhel'
+when 'rhel', 'amazon'
   default['clamav']['clamd']['service'] = 'clamd'
 when 'debian'
   default['clamav']['clamd']['service'] = 'clamav-daemon'

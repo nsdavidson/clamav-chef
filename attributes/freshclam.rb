@@ -23,7 +23,7 @@ default['clamav']['freshclam']['enabled'] = false
 
 # OS-Specific Options
 case node['platform_family']
-when 'rhel'
+when 'rhel', 'amazon'
   default['clamav']['freshclam']['service'] = 'freshclam'
 when 'debian'
   default['clamav']['freshclam']['service'] = 'clamav-freshclam'

@@ -8,6 +8,14 @@ platforms:
   - name: centos-5.11
   - name: ubuntu-14.04
   - name: ubuntu-12.04
+  - name: amazon
+    driver:
+      name: dokken
+      image: dokken/amazonlinux
+    transport:
+      name: dokken
+    provisioner:
+      name: dokken
 
 suites:
   - name: default

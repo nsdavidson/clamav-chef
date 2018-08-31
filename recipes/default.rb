@@ -19,7 +19,7 @@
 #
 
 case node['platform_family']
-when 'rhel'
+when 'rhel', 'amazon'
   include_recipe "#{cookbook_name}::install_rpm"
 when 'debian'
   include_recipe "#{cookbook_name}::install_deb"

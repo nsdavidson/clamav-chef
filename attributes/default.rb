@@ -21,7 +21,7 @@
 # Shared and OS-Specific Options
 default['clamav']['version'] = nil
 case node['platform_family']
-when 'rhel'
+when 'rhel', 'amazon'
   default['clamav']['conf_dir'] = '/etc'
 when 'debian'
   default['clamav']['conf_dir'] = '/etc/clamav'
